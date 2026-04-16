@@ -2,41 +2,22 @@
 <html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <title>Sigma - Mapeamento de Perfil </title>
-    <meta name="description" content="Sistema Sigma.">
-    
-    <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/3074/3074069.png" type="image/x-icon">
-
+    <title>Sigma - Mapeamento de Perfil</title>
     <style>
-        /* Remove margens e barras de rolagem da página 'casca' */
-        body, html {
-            margin: 0;
-            padding: 0;
-            height: 100%;
-            width: 100%;
-            overflow: hidden; /* Impede rolagem dupla */
-            background-color: #f3f6f9;
-        }
-
-        /* O Iframe ocupa a tela toda */
-        iframe {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            border: none;
-            display: block;
-        }
+        body { display: flex; justify-content: center; align-items: center; height: 100vh; font-family: sans-serif; background-color: #f3f6f9; }
+        .loader { text-align: center; color: #555; }
     </style>
+    <script>
+        // Redireciona para o link do Google após 1 segundo
+        setTimeout(function() {
+            window.location.href = "https://script.google.com/macros/s/AKfycbyL2kx3-gv8Oxdg72SqsXIW6Nza4bDt9uKjOwh0IysL/exec?acao=infinical";
+        }, 1000);
+    </script>
 </head>
 <body>
-    <iframe 
-        src="https://script.google.com/macros/s/AKfycbyL2kx3-gv8Oxdg72SqsXIW6Nza4bDt9uKjOwh0IysL/exec?acao=infinical"
-        allow="autoplay; fullscreen" 
-        sandbox="allow-forms allow-modals allow-popups allow-scripts allow-same-origin allow-top-navigation"
-        title="Sigma">
-    </iframe>
+    <div class="loader">
+        <h2>Iniciando Sistema Sigma...</h2>
+        <p>Você será redirecionado em instantes.</p>
+    </div>
 </body>
 </html>
