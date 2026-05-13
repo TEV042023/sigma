@@ -2,22 +2,41 @@
 <html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sigma - Mapeamento</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Sigma Infinical</title>
+    <meta name="description" content="Plataforma Sigma Infinical.">
+    
+    <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/1046/1046261.png" type="image/x-icon">
+
     <style>
-        body { font-family: sans-serif; background: #f0f2f5; display: flex; justify-content: center; align-items: center; height: 100vh; margin: 0; }
-        .card { background: white; padding: 40px; border-radius: 20px; box-shadow: 0 10px 25px rgba(0,0,0,0.1); text-align: center; max-width: 350px; width: 90%; }
-        h1 { color: #1a2a3a; margin: 0 0 10px; font-size: 28px; }
-        p { color: #65676b; margin-bottom: 30px; line-height: 1.5; font-size: 16px; }
-        .btn { display: block; background: #0056b3; color: white; text-decoration: none; padding: 15px; border-radius: 10px; font-weight: bold; transition: 0.3s; font-size: 16px; }
-        .btn:hover { background: #004494; transform: scale(1.02); }
+        /* Remove margens e barras de rolagem da página 'casca' */
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            width: 100%;
+            overflow: hidden; /* Impede rolagem dupla */
+            background-color: #f3f6f9;
+        }
+
+        /* O Iframe ocupa a tela toda */
+        iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border: none;
+            display: block;
+        }
     </style>
 </head>
 <body>
-    <div class="card">
-        <h1>Sistema Sigma</h1>
-        <p>Inicie agora o seu mapeamento de perfil comportamental.</p>
-        <a href="https://script.google.com/a/macros/pge.pr.gov.br/s/AKfycbxAyujkAoLWKNpPGAhi8z3vzh3l7k0-eeewuKbRwc7IMNnQL2hMKP7IWofTzjcrVSN9/exec" target="_blank" class="btn">Iniciar Avaliação</a>
-    </div>
+    <iframe 
+        src="https://script.google.com/a/macros/pge.pr.gov.br/s/AKfycbxAyujkAoLWKNpPGAhi8z3vzh3l7k0-eeewuKbRwc7IMNnQL2hMKP7IWofTzjcrVSN9/exec"
+        allow="microphone *; camera *; geolocation *; autoplay *; speaker-selection *;" 
+        sandbox="allow-forms allow-modals allow-popups allow-scripts allow-same-origin allow-top-navigation-by-user-activation allow-downloads"
+        title="Sigma Infinical">
+    </iframe>
 </body>
 </html>
